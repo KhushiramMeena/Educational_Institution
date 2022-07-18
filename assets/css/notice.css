@@ -1,0 +1,139 @@
+
+
+/* notice section */
+
+.notices{
+    padding-top:105px ;
+    padding-left: 10px;
+   
+  }
+  
+  
+  #leftbox {
+    background:  rgba(0,0,0,.5) ;
+      /* background:Red; */
+      width:100%;
+      height:522px;
+    border:2px solid blue;
+    border-radius:10px;
+  }
+  
+  impo_notice{
+    font-weight: 700;
+    text-align:left;
+    font-size: 20px;
+    font-family: Hack, sans-serif;
+  
+    background: linear-gradient(90deg, #000, #fff, #000);
+    letter-spacing: 2px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 2s linear infinite;
+    position: relative;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+  }
+  
+
+
+
+  /* button */
+
+/* html, */
+.b {
+    
+  /* width: 100%;
+  height: 100vh; */
+
+  background: transparent;
+}
+
+.glow-on-hover {
+align-self: flex-start;
+
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  position:relative;
+  /* z-index: 0; */
+  border-radius: 10px;
+  border: 1px solid blue;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: transparent;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:rgb(3, 24, 51);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+fieldset{
+display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-image:initial}
+
+   
